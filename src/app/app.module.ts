@@ -9,6 +9,8 @@ import { HeaderComponent } from './headfoot/header/header.component';
 import { FooterComponent } from './headfoot/footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ReactiveFormsModule} from '@angular/forms'; 
+import {MaterialModule} from './modules/material-ui/material-ui.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule, 
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
