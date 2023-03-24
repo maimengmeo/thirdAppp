@@ -18,41 +18,55 @@
 
 
     <!-- Icon only -->
-    <button mat-icon-button color="primary">
-		<span class="material-symbols-sharp">
+    <button mat-icon-button color="primary" (click)="change(1)" id="s1">
+		<span class="material-symbols-sharp" >
             pets
             <!-- favorite -->
         </span>
     </button>&nbsp;&nbsp;
 
     <!-- Icon on Right -->
-    <button>
+    <button mat-stroked-button>
       Stroked with ICON on right
+      <span class="material-symbols-sharp">
+        sunny
+    </span>
     </button>&nbsp;&nbsp;
 
     <!-- Icon Underneath -->
-    <button>
+    <button mat-stroked-button>
       Stroked with ICON below<br>
+      <span class="material-symbols-sharp">
+        sunny
+        </span>
     </button>&nbsp;&nbsp;    
     <hr>
   </mat-tab>
 
   <!-- Label with Icon for Personal Data-->
   <mat-tab>
-    <ng-template>
+    <ng-template mat-tab-label>
 			Bio &nbsp; &nbsp;
-			
+            <span class="material-symbols-sharp">
+                sunny
+            </span>	
     </ng-template>
 
   </mat-tab>  
 
   <!-- Label with Icon for External Data View -->
   <mat-tab>
-    <ng-template>
+    <ng-template mat-tab-label>
       My Classes &nbsp; &nbsp;
-
+      <span class="material-symbols-sharp">
+        pets
+        </span>
     </ng-template>
 
-
+    <mat-action-list>
+        <mat-list-item *ngFor="let x of myclasses">
+            <h4>{{x.cname}}/{{x.dow}}</h4>
+        </mat-list-item>
+    </mat-action-list>
   </mat-tab>
 </mat-tab-group>
