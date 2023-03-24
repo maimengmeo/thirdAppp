@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { HeadfootComponent } from './headfoot/headfoot.component';
 import { HeaderComponent } from './headfoot/header/header.component';
 import { FooterComponent } from './headfoot/footer/footer.component';
+import { MainComponent } from './main/main.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadfootComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

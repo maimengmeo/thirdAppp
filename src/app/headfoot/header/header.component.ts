@@ -6,5 +6,5 @@ import { Student } from 'src/app/myClasses/student';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  @Input() student: Student
+  @Input() student!: Student
 }
